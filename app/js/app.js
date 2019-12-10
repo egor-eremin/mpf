@@ -126,7 +126,26 @@ $(function() { // document.ready
 $( document ).ready(function () {
 	(function addCustomScroll() {
 		if ($('.pk-custom-scroll').length) {
-			$('.pk-custom-scroll').mCustomScrollbar();
+			media('(max-width: 375px)', function () {
+				$('.pk-custom-scroll').mCustomScrollbar("destroy");
+			});
+			media('(min-width: 375px)', function () {
+				$('.pk-custom-scroll').mCustomScrollbar();
+			});
 		}
 	})();
 });
+
+function media(mediaQueryString, action){
+	'use strict';
+	var handleMatchMedia = function (mediaQuery) {
+		if (mediaQuery.matches) { //Попадает в запроc
+			if (action  && typeof(action) === 'function') {
+				action();
+			}
+		}
+	};
+	var mql = window.matchMedia(mediaQueryString); //стандартный медиазапрос для смены режима просмотра
+	handleMatchMedia(mql);
+	mql.addListener(handleMatchMedia);
+}

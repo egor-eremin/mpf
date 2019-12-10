@@ -189,11 +189,13 @@
 .header-right {
 	display: flex;
 	justify-content: flex-end;
-	flex-wrap: wrap;
 	align-items: center;
 	margin-top: -3px;
 	
 	&__links {
+
+		display: flex;
+		height: 33px;
 		
 		> a {
 			display: inline-block;
@@ -219,7 +221,6 @@
 	&__socials {
 		display: flex;
 		padding-top: 2px;
-		flex-wrap: wrap;
 		margin-left: 55px;
 		
 		> a {
