@@ -1,0 +1,259 @@
+/* ==|====================
+   Contacts
+   ======================= */
+
+.contacts-section {
+	padding-bottom: rem(150px);
+	background: url("../pic/contacts-bg.svg") 50% 100% no-repeat;
+	background-size: cover;
+}
+
+.contacts-box {
+	padding-top: rem(130px);
+}
+
+.contacts-info-box {
+	min-height: 459px;
+	margin-bottom: rem(153px);
+	padding: rem(50px) rem(30px) rem(70px) rem(85px);
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 30px 80px rgba(22, 30, 55, 0.1);
+	border-radius: 5px;
+	background: url("../pic/contacts-managers.png") right bottom no-repeat #fff;
+	color: #161E37;
+	
+	a {
+		color: #5AD6FF;
+		
+		&:hover {
+			color: #18c6ff;
+		}
+		
+	}
+	
+}
+
+.contacts-info-list {
+	max-width: 475px;
+	padding-top: rem(112px);
+}
+
+.contacts-info-item {
+	position: relative;
+	padding-left: rem(43px);
+	margin-bottom: rem(42px);
+	font-size: rem(22px);
+	line-height: 1.4em;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+	
+	> i {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-position: center;
+		background-repeat: no-repeat;
+		
+		&.icon-placement {
+			width: 18px;
+			height: 26px;
+			background-size: 18px 26px;
+			background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAxOCAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMSA5QzAuOTk5OTkzIDE0IDkgMjUgOSAyNUM5IDI1IDE2Ljk5OTkgMTQgMTcgOUMxNy4wMDAxIDQgMTMuNDE4MyAxIDkgMUM0LjU4MTcyIDEgMS4wMDAwMSA0IDEgOVoiIHN0cm9rZT0iIzAwQzZBMiIvPjxjaXJjbGUgY3g9IjkiIGN5PSI5IiByPSIzLjUiIHN0cm9rZT0iIzAwQzZBMiIvPjwvc3ZnPg==);
+		}
+		&.icon-mail {
+			width: 26px;
+			height: 20px;
+			top: 0.35em;
+			background-size: 26px 20px;
+			background-image: url(data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAyMDAxMDkwNC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+PHN2ZyB2ZXJzaW9uPSIxLjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjczMXB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNzMxMCA1MTIwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0Ij48ZyBpZD0ibGF5ZXIxMDEiIGZpbGw9IiMwMGM2YTIiIHN0cm9rZT0ibm9uZSI+IDxwYXRoIGQ9Ik0wIDI1NjAgbDAgLTI1NjAgMzY1NSAwIDM2NTUgMCAwIDI1NjAgMCAyNTYwIC0zNjU1IDAgLTM2NTUgMCAwIC0yNTYweiBtNjk0MCAzNzkgYzAgLTk5NiAtNCAtMTgwOSAtOCAtMTgwNyAtNSAyIC03NDEgNTgxIC0xNjM2IDEyODggLTg5NSA3MDcgLTE2MzEgMTI4NiAtMTYzNiAxMjg4IC01IDIgLTc0MSAtNTgzIC0xNjM3IC0xMjk5IC04OTUgLTcxNiAtMTYzNCAtMTMwNiAtMTY0MCAtMTMxMiAtMTAgLTcgLTEzIDM1OCAtMTMgMTgyMiBsMCAxODMxIDMyODUgMCAzMjg1IDAgMCAtMTgxMXogbS0xNjM2IC0xMDA0IGwxNjM1IC0xMjkwIDEgLTEzNyAwIC0xMzggLTMyODUgMCAtMzI4NiAwIDMgMTE5IDMgMTE5IDE2MzkgMTMxMSBjOTAyIDcyMiAxNjQzIDEzMTAgMTY0NyAxMzA5IDUgLTIgNzQ0IC01ODMgMTY0MyAtMTI5M3oiLz4gPC9nPjwvc3ZnPg==);
+		}
+		
+	}
+	
+}
+
+
+.contacts-question {
+	
+	h2 {
+		margin-bottom: rem(85px);
+		font-size: rem(40px);
+		line-height: 1.1em;
+	}
+	
+}
+
+.contacts-question-box {
+	max-width: 972px;
+	position: relative;
+	margin: 0 auto;
+	padding: rem(92px) rem(50px) rem(85px) rem(50px);
+	background-color: #fff;
+	box-shadow: 0 20px 80px rgba(0, 77, 102, 0.1);
+	border-radius: 2px;
+}
+
+.contacts-question-tabs {
+	max-width: 578px;
+	margin: 0 auto;
+	
+	.regular-tabs__btn {
+		width: 50%;
+	}
+	
+}
+
+.contacts-question-form {
+	max-width: 450px;
+	margin: 0 auto;
+	
+	.submit-box {
+		margin-top: -15px;
+		
+		.regular-btn {
+			display: block;
+			width: 100%;
+			padding-left: 10px;
+			padding-right: 10px;
+			max-width: 180px;
+			margin: 0 auto;
+		}
+		
+	}
+	
+}
+
+.contacts-question-success {
+	max-width: 560px;
+	padding: rem(30px) 0 rem(40px);
+	margin: 0 auto;
+	text-align: center;
+	font-size: rem(24px);
+	line-height: 1.458em;
+	
+	.success-icon {
+		margin: 0 auto rem(55px);
+		width: 65px;
+		height: 59px;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjUiIGhlaWdodD0iNTkiIHZpZXdCb3g9IjAgMCA2NSA1OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAuODIxMzcyIDMwLjcxNjZDMi4wMDY2MyAyOS4zNzkyIDQuMDM4ODkgMjkuMjY3MiA1LjM2MDU2IDMwLjQ2NjdMMjguMTAwNyA1MS4xMDMyTDU5LjA2NzggMS41MTU1M0M2MC4wMTYyIC0wLjAwMzEyMjgxIDYyLjAwMTYgLTAuNDU2MjM2IDYzLjUwMjQgMC41MDM0NzlDNjUuMDAzMSAxLjQ2MzE5IDY1LjQ1MDkgMy40NzIzMSA2NC41MDI1IDQuOTkwOTZMMzEuOTA5OSA1Ny4xODE1QzMwLjYzNDYgNTkuMjIzNiAyNy44NTEgNTkuNjE1MSAyNi4wNzM4IDU4LjAwMjNMMS4wNjgzOCAzNS4zMUMtMC4yNTMyOTMgMzQuMTEwNiAtMC4zNjM4ODEgMzIuMDU0MSAwLjgyMTM3MiAzMC43MTY2WiIgZmlsbD0iIzAwQzZBMiIvPjwvc3ZnPg==);
+	}
+	
+	.success-caption {
+		margin-bottom: rem(29px);
+		font-size: rem(36px);
+		line-height: 1em;
+		font-weight: 600;
+	}
+	
+	.success-btn {
+		margin-top: rem(43px);
+	}
+	
+}
+
+@media only screen and (max-width: 1200px) {
+	
+	.contacts-info-box {
+		padding-left: rem(30px);
+		background-position: calc(100% + 80px) 100%;
+	}
+	
+	.contacts-info-list {
+		padding-top: 0;
+	}
+
+}
+
+@media only screen and (max-width: 991px) {
+	
+	.contacts-box {
+		padding-top: rem(125px);
+	}
+
+}
+
+@media only screen and (max-width: 900px) {
+	
+	.contacts-info-box {
+		min-height: 0;
+		padding-bottom: rem(200px);
+		background-size: 800px 311px;
+		background-position: calc(100% + 50px) 100%;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+	
+	.contacts-section {
+		background-size: auto;
+	}
+	
+	.contacts-info-box {
+		margin-bottom: rem(125px);
+		padding: rem(65px) rem(50px) rem(200px) rem(43px);
+		background-size: 550px 214px;
+		background-position: calc(50% - 100px) 100%;
+	}
+	
+	.contacts-info-item {
+		margin-bottom: rem(30px);
+		font-size: rem(20px);
+		line-height: 1.4em;
+	}
+	
+	.contacts-question-box {
+		padding: rem(73px) rem(34px) rem(77px) rem(34px);
+	}
+	
+	.contacts-question-form {
+		padding: 0 rem(18px);
+	}
+	
+	.contacts-question h2 {
+		font-size: rem(24px);
+	}
+	
+	.regular-tabs__btns {
+		margin-bottom: rem(40px);
+		font-size: rem(20px);
+	}
+	
+	.contacts-question-success {
+		font-size: rem(18px);
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+	
+	.regular-tabs__btns {
+		font-size: rem(18px);
+	}
+	
+	.contacts-question-box {
+		padding-left: rem(15px);
+		padding-right: rem(15px);
+	}
+
+}
+
+@media only screen and (max-width: 360px) {
+	
+	.contacts-info-box {
+		padding-left: rem(20px);
+		padding-right: rem(20px);
+	}
+	
+	.contacts-info-item {
+		font-size: rem(16px);
+	}
+
+}
