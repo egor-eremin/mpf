@@ -4,12 +4,14 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	browserSync  = require('browser-sync'), // Подключаем Browser Sync
 	concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
 	uglify       = require('gulp-uglify'), // Подключаем gulp-uglify (для сжатия JS)
+	terser = require('gulp-terser'),
 	cssnano      = require('gulp-cssnano'), // Подключаем пакет для минификации CSS
 	rename       = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
 	del          = require('del'), // Подключаем библиотеку для удаления файлов и папок
 	imagemin     = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
 	pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
 	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
+	plumber = require('gulp-plumber'),
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 gulp.task('sass', function(){ // Создаем таск Sass
@@ -21,6 +23,7 @@ gulp.task('sass', function(){ // Создаем таск Sass
 		})) // Преобразуем Sass в CSS посредством gulp-sass
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
 		.pipe(sourcemaps.write())
+		.pipe(plumber())
 		.pipe(gulp.dest('app/css')) // Выгружаем результат в папку app/css
 		.pipe(browserSync.reload({stream: true})); // Обновляем CSS на странице при изменении
 });

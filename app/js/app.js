@@ -22,7 +22,7 @@ $(function() { // document.ready
 	});
 	var $modalOpener = $(".open-modal");
 	$modalOpener.fancybox({
-		animationEffect: "zoom-in-out",
+		// animationEffect: "zoom-in-out",
 		touch: false,
 		autoFocus: false,
 		baseClass: "regular-modal-fancybox"
@@ -129,15 +129,96 @@ $( document ).ready(function () {
 			media('(max-width: 375px)', function () {
 				$('.pk-custom-scroll').mCustomScrollbar("destroy");
 			});
-			media('(min-width: 375px)', function () {
+			media('(min-width: 376px)', function () {
 				$('.pk-custom-scroll').mCustomScrollbar();
 			});
 		}
 	})();
+	(function openCallbackForm() {
+		$('.show-details-button').fancybox({
+			touch: false,
+			baseClass: "regular-modal-fancybox"
+		});
+	})();
+	(function validateCallbackForm() {
+		$('.formCallback').validate({
+			submitHandler: function (form) {
+				$.ajax({
+					type: $(form).attr('method'),
+					url: $(form).attr('action'),
+					data: new FormData(form),
+
+					cache: false,
+					contentType: false,
+					processData: false,
+
+					dataType: 'text',
+					success: function () {
+						$(form).find('input').val('');
+						$('.callback-form-wrapper').hide();
+						$('.callback-text-success').css('display','flex');
+					},
+					error: function() {
+						console.log('Упс... Что-то пошло не так!');
+					}
+				});
+				return false;
+			}
+		});
+	})();
+	(function closeFancyBox() {
+		$('.close-callback-form-btn').on('click', function () {
+			$.fancybox.close()
+		});
+	})();
+	(function initMainProjectSlider() {
+
+		if ($('.slider-project-list').length) {
+			media('(max-width: 1024px)', function () {
+				$('.slider-project-list').trigger('destroy.owl.carousel');
+			});
+			media('(min-width: 1025px)', function () {
+				$('.slider-project-list').owlCarousel({
+					loop:true,
+					items: 3,
+					nav: true,
+					dots: false,
+					margin: 20,
+				});
+			})
+		}
+
+	})();
+	(function initinvestorsSlider() {
+		if ($('.investors-carousel').length) {
+			media('(max-width: 1024px)', function () {
+				$('.investors-carousel').trigger('destroy.owl.carousel');
+			});
+			media('(min-width: 1025px)', function () {
+				$('.investors-carousel').owlCarousel({
+					loop:true,
+					items: 4,
+					nav: true,
+					dots: false,
+					margin: 20,
+					responsive : {
+						1268: {
+							items: 4,
+						},
+						0: {
+							items: 3,
+						}
+					}
+				})
+			});
+		}
+	})();
+	(function playVideo() {
+		findVideos();
+	})();
 });
 
 function media(mediaQueryString, action){
-	'use strict';
 	var handleMatchMedia = function (mediaQuery) {
 		if (mediaQuery.matches) { //Попадает в запроc
 			if (action  && typeof(action) === 'function') {
@@ -148,4 +229,54 @@ function media(mediaQueryString, action){
 	var mql = window.matchMedia(mediaQueryString); //стандартный медиазапрос для смены режима просмотра
 	handleMatchMedia(mql);
 	mql.addListener(handleMatchMedia);
+}
+function findVideos() {
+	var videos = document.querySelectorAll('.video-item');
+
+	for (var i = 0; i < videos.length; i++) {
+		setupVideo(videos[i]);
+	}
+}
+
+function setupVideo(video) {
+	var link = video.querySelector('.video-link');
+	var media = video.querySelector('.video-media');
+	var button = video.querySelector('.video-play-button');
+	var id = parseMediaURL(media);
+
+	video.addEventListener('click', function () {
+		var iframe = createIframe(id);
+
+		link.remove();
+		button.remove();
+		video.appendChild(iframe);
+	});
+
+	link.removeAttribute('href');
+	// video.classList.add('video--enabled');
+}
+
+function parseMediaURL(media) {
+	var regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
+	var url = media.src;
+	var match = url.match(regexp);
+
+	return match[1];
+}
+
+function createIframe(id) {
+	var iframe = document.createElement('iframe');
+
+	iframe.setAttribute('allowfullscreen', '');
+	iframe.setAttribute('allow', 'autoplay');
+	iframe.setAttribute('src', generateURL(id));
+	iframe.classList.add('video-media');
+
+	return iframe;
+}
+
+function generateURL(id) {
+	var query = '?rel=0&showinfo=0&autoplay=1';
+
+	return 'https://www.youtube.com/embed/' + id + query;
 }

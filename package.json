@@ -23,7 +23,9 @@
     "imagemin-pngquant": "^8.0.0"
   },
   "dependencies": {
+    "gulp-plumber": "^1.2.1",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0",
     "npm": "^6.12.0"
   }
 }
