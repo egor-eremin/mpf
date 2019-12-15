@@ -213,8 +213,47 @@ $( document ).ready(function () {
 			});
 		}
 	})();
+	(function initExpertsSlider() {
+		if ('.experts-our__slider') {
+			$('.experts-our__slider').owlCarousel({
+				loop:true,
+				items: 3,
+				nav: true,
+				dots: false,
+				autoWidth:true,
+				responsive: {
+					1400: {
+						item: 3
+					},
+					0: {
+						item: 2
+					}
+				}
+			});
+		}
+	})();
 	(function playVideo() {
 		findVideos();
+	})();
+	(function showExpertsMapPopup() {
+		$('.experts-global__map_dot').on('click', function () {
+			if (!$(this).hasClass('active')) {
+				$('.experts-global__map_dot').removeClass('active');
+				$(this).addClass('active');
+			} else {
+				$(this).removeClass('active');
+			}
+		})
+	})();
+	(function hideExpertsMapPopup() {
+		if ($('.experts-global__map_dot')) {
+			$(document).mouseup(function (e) {
+				var element = $('.experts-global__map_dot');
+					if (!element.is(e.target) && element.hasClass('active')) {
+						$('.experts-global__map_dot').removeClass('active');
+					}
+				})
+		}
 	})();
 });
 
