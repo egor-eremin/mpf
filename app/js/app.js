@@ -255,6 +255,31 @@ $( document ).ready(function () {
 				})
 		}
 	})();
+	(function addTabs() {
+		$('.about-people__tabs_tab-title').on('click', function () {
+			var  thisParent = $(this).parent();
+			var thisId = thisParent.data('id');
+
+			if (!thisParent.hasClass('active-tab')) {
+				$('.about-people__tabs_tab').removeClass('active-tab');
+				thisParent.addClass('active-tab');
+				$('.about-people__slider-wrap').removeClass('active');
+				$('#' + thisId).addClass('active');
+			}
+		})
+	})();
+	(function initAboutSlider() {
+		if ($('.about-people__slider')) {
+			$('.about-people__slider').owlCarousel({
+				loop:true,
+				items: 1,
+				nav: true,
+				dots: false,
+				animateOut: 'fadeOut',
+				animateIn: 'fadeIn',
+			})
+		}
+	})();
 });
 
 function media(mediaQueryString, action){
