@@ -280,6 +280,17 @@ $( document ).ready(function () {
 			})
 		}
 	})();
+    (function addAccordion() {
+        $('.faq-accordion-title').on('click', function () {
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active');
+            $(this).next('.faq-content__sidebar-accordeon_list').slideDown(300);
+        } else {
+            $(this).removeClass('active');
+            $(this).next('.faq-content__sidebar-accordeon_list').slideUp(300);
+        }
+        });
+    })();
 });
 
 function media(mediaQueryString, action){

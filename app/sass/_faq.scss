@@ -1,0 +1,384 @@
+
+.faq {
+	text-align: left;
+	&__title {
+		font-size: 40px;
+		line-height: 154.3%;
+		text-align: left;
+		margin-bottom: 52px;
+	}
+	&-content {
+		margin-top: 150px;
+		padding-bottom: 150px;
+		align-items: flex-start;
+		&__sidebar {
+			min-width: 500px;
+			width: 500px;
+			padding: 45px 0 27px;
+			box-shadow: 0 30px 80px rgba(22,30,55,0.1);
+			font-size: 20px;
+			&-wrap {
+				margin-bottom: 17px;
+			}
+			&_title {
+				font-size: 25px;
+				margin-bottom: 15px;
+				padding-left: 30px;
+				text-align: left;
+				line-height: 154.3%;
+			}
+			&_list {
+				&-item {
+					cursor: pointer;
+					transition: 0.3s ease;
+					margin: 0;
+					&:hover {
+						background: #F0FAFE;
+						transition: 0.3s ease;
+
+					}
+				}
+				&-link {
+					color: #161E37;
+					padding: 8px 30px 8px 54px;
+					display: block;
+					text-decoration: none;
+					font-size: 20px;
+					line-height: 1.35;
+					&:hover {
+						text-decoration: none;
+						color: #161E37;
+					}
+				}
+				&-acc {
+					&:hover {
+						background: none;
+					}
+				}
+			}
+			&-accordeon {
+				color: #161E37;
+				&_list {
+					margin: 0;
+					&-item {
+						font-size: 18px;
+						margin: 0;
+						&:hover {
+							background: #F0FAFE;
+							transition: 0.3s ease;
+						}
+					}
+					&-link {
+						color: #161E37;
+						padding: 8px 0 8px 97px;
+						display: block;
+						text-decoration: none;
+						font-size: 18px;
+						line-height: 1.33;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+		&__title {
+			font-size: 30px;
+			line-height: 154.3%;
+			margin-bottom: 30px;
+			text-align: left;
+			&-underline {
+				margin-top: 52px;
+				&:after {
+					content: '';
+					display: block;
+					width: 100%;
+					height: 1px;
+					background: #DCDDE1;
+					margin-top: 17px;
+				}
+			}
+		}
+		&__link {
+			color: #00B2ED;
+			transition: 0.3s ease;
+			text-decoration: none;
+			&:hover {
+				transition: 0.3s ease;
+				color: #80D8F6;
+				text-decoration: underline;
+			}
+		}
+		&__dedicated {
+			color: #00C6A2;
+			background: #EBFEFB;
+			padding: 4px;
+			padding-top: 0;
+		}
+		&__list {
+			font-size: 20px;
+			list-style: none;
+			padding-left: 0;
+			&_item {
+				margin-bottom: 5px;
+				position: relative;
+				padding-left: 25px;
+				&:before {
+					content: '';
+					width: 5px;
+					height: 5px;
+					border-radius: 50%;
+					display: block;
+					background: #DDDDDD;
+					position: absolute;
+					top: 14px;
+					left: 0;
+				}
+			}
+		}
+		&__underlist {
+			margin-left: 50px;
+			list-style: none;
+			margin-top: 0;
+			margin-bottom: 5px;
+			padding: 0;
+			&_item {
+				margin: 0;
+			}
+		}
+		&__text {
+			font-size: 20px;
+			line-height: 1.6em;
+			letter-spacing: 0.03em;
+			margin: 30px 0;
+			color: #161E37;
+			&-quote {
+				font-style: italic;
+				font-size: 18px;
+				position: relative;
+				margin-left: 26px;
+				padding: 12px 0;
+				&:after {
+					content: '';
+					display: block;
+					width: 6px;
+					height: 100%;
+					background: #B9BBC3;
+					position: absolute;
+					top: 0;
+					left: -26px;
+				}
+			}
+			&-blocked {
+				font-size: 18px;
+				background: #F2FBFE;
+				padding: 20px;
+			}
+		}
+		&__table {
+			font-size: 20px;
+			text-align: center;
+			width: 100%;
+			letter-spacing: 0.03em;
+			table-layout: fixed;
+			border-collapse: inherit;
+			&_hat {
+				font-weight: 600;
+				padding: 16px;
+				background: #F2F7F9;
+			}
+			&_col {
+				padding: 12px;
+			}
+			&_row {
+				&:nth-of-type(2n+1) {
+					background: #F7FAFB;
+				}
+				&:nth-of-type(2n) {
+					background: #FBFDFD;
+				}
+			}
+		}
+		&__tab {
+			width: 100%;
+			padding-right: 100px;
+			margin-left: 114px;
+		}
+	}
+}
+.faq-content__sidebar_list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.faq-accordion-title {
+	padding: 8px 30px 8px 54px;
+	transition: .3s ease;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		display: block;
+		border: 4px solid transparent;
+		border-left: 4px solid #161E37;
+		left: 32px;
+		top: 20px;
+		transform-origin: left center;
+	}
+	&.active::before {
+		transform: rotate(90deg);
+	}
+	&.active {
+		font-weight: 600;
+	}
+	&:hover {
+		background: #F0FAFE;
+	}
+}
+.faq-content__sidebar-accordeon_list {
+	padding: 0;
+	margin: 0;
+	display: none;
+}
+
+@media screen and (max-width: 1366px) {
+	.faq-content__tab {
+		padding-right: 50px;
+		margin-left: 60px;
+	}
+}
+
+@media screen and (max-width: 1198px) {
+	.faq {
+		&-content {
+			flex-wrap: wrap;
+			margin-top: 80px;
+			&__sidebar {
+				width: 100%;
+				margin-bottom: 90px;
+			}
+			&__tab {
+				margin-left: 50px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.faq-content__tab {
+		padding-right: 30px;
+		margin-left: 30px;
+	}
+}
+@media (max-width: 640px) {
+	.faq-content__sidebar {
+		padding-bottom: 22px;
+	}
+}
+@media screen and (max-width: 576px) {
+	.faq {
+		&__title {
+			font-size: 24px;
+			margin-bottom: 30px;
+		}
+		&-content {
+			margin-top: 52px;
+			padding-bottom: 120px;
+			&__sidebar {
+				min-width: auto;
+				margin-bottom: 70px;
+				font-size: 16px;
+				padding: 30px 0 25px;
+				&-wrap {
+					margin-bottom: 5px;
+				}
+				&-accordeon {
+					padding: 0 20px;
+					&_list {
+						&-item  {
+							margin-left: -20px;
+						}
+						&-link {
+							padding: 5px 0 5px 72px;
+						}
+					}
+				}
+				&_title {
+					font-size: 16px;
+					padding: 0 20px;
+					margin-bottom: 5px;
+				}
+				&_list {
+					&-link {
+						padding: 5px 32px 5px 38px;
+						font-size: 16px;
+					}
+
+				}
+				&-accordeon {
+					&_list {
+						&-item {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+			&__title {
+				font-size: 16px;
+				margin-bottom: 10px;
+				&-underline {
+					font-size: 20px;
+					margin-bottom: 20px;
+					margin-top: 30px;
+				}
+			}
+			&__text {
+				margin: 20px 0;
+				font-size: 16px;
+				&-quote {
+					margin-left: 26px;
+					padding: 0;
+					&:after {
+						height: 40%;
+					}
+				}
+			}
+			&__list {
+				font-size: 16px;
+				margin-left: 16px;
+				&_item {
+					margin: 10px 0;
+					&:before {
+						top: 9px;
+					}
+				}
+			}
+			&__underlist {
+				margin-left: 0;
+				&_item {
+					margin: 10px 0;
+				}
+			}
+			&__table {
+				font-size: 16px;
+				&_hat {
+					padding: 10px 15px;
+				}
+			}
+			&__tab {
+				padding-right: 16px;
+				margin-left: 16px;
+			}
+		}
+	}
+	.faq-accordion-title::before {
+		top: 13px;
+		left: 19px;
+	}
+	.faq-accordion-title {
+		padding: 5px 32px 5px 38px;
+
+	}
+}
