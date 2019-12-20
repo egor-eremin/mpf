@@ -695,6 +695,10 @@
 				&_img {
 					width: 80px;
 					height: 80px;
+					& img {
+						border-radius: 50%;
+						display: inline-block;
+					}
 				}
 				&_descr {
 					margin-left: 20px;
@@ -849,6 +853,10 @@
 					width: 135px;
 					height: 135px;
 					margin-right: 30px;
+					img {
+						border-radius: 50%;
+						display: inline-block;
+					}
 				}
 				&_country {
 					display: flex;

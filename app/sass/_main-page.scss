@@ -208,7 +208,7 @@
 	}
 }
 .footer-project_project1::before {
-	background-image: url("../pic/project-background1.jpg");
+	background-image: url("../pic/main-project-1.jpg");
 }
 .footer-project-col {
 	position: relative;
@@ -244,7 +244,7 @@
 	display: flex;
 	align-items: baseline;
 	color: #00C6A2;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 21px;
 }
 .footer-project__col-1 {
@@ -338,10 +338,10 @@
 	margin: auto auto 8px auto;
 }
 .footer-project_project2::before {
-	background-image: url("../pic/project-background-footer2.jpg");
+	background-image: url("../pic/main-project-2.jpg");
 }
 .footer-project_project3::before {
-	background-image: url("../pic/project-background-footer3.jpg");
+	background-image: url("../pic/main-project-3.jpg");
 }
 .index-main {
 	//transform: translateY(-73px);
@@ -1004,6 +1004,9 @@
 	position: absolute;
 	z-index: 2;
 }
+.not-event {
+	pointer-events: none;
+}
 
 @media (min-resolution: 1.5dppx) {
 	.project-name::before {
@@ -1069,12 +1072,6 @@
 		width: 300px;
 		height: 450px;
 	}
-	//.slider-project-list .owl-item {
-	//	opacity: 1;
-	//}
-	//.slider-project-list .owl-stage-outer {
-	//	overflow: hidden;
-	//}
 	.slider-project-list {
 		max-width: 940px;
 	}
@@ -1118,7 +1115,7 @@
 	}
 	.project-emissions {
 		line-height: 1.3125;
-		font-size: 14px;
+		font-size: 12px;
 	}
 	.project-emissions-co2 {
 		margin-right: 10px;
@@ -1131,6 +1128,7 @@
 	.footer-project__col-2 {
 		width: calc(30% - 10px);
 		padding-left: 0;
+		flex-grow: 1;
 	}
 	.project-information-item {
 		line-height: 1.3125;
@@ -1138,21 +1136,21 @@
 		margin-bottom: 7px;
 	}
 	.information-power {
-		padding-left: 26px;
+		padding-left: 24px;
 		&::before {
 			width: 16px;
 			height: 16px;
 		}
 	}
 	.information-sun {
-		padding-left: 26px;
+		padding-left: 24px;
 		&::before {
 			width: 16px;
 			height: 16px;
 		}
 	}
 	.information-roi {
-		padding-left: 26px;
+		padding-left: 24px;
 		&::before {
 			width: 12px;
 			height: 18px;
@@ -1160,7 +1158,7 @@
 		}
 	}
 	.information-wind {
-		padding-left: 26px;
+		padding-left: 24px;
 		&::before {
 			width: 16px;
 			height: 16px;
