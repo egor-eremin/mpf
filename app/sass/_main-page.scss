@@ -5,17 +5,17 @@
 .mp-top-section {
 	min-height: 860px;
 	position: relative;
-	padding-bottom: rem(100px);
+	padding-bottom: 100px;
 	color: #fff;
 	background: url("../pic/mp-top-bg.svg") center no-repeat;
 	background-size: cover;
 	
 	h1 {
 		max-width: 675px;
-		margin-bottom: rem(20px);
+		margin-bottom: 20px;
 		color: #fff;
 		text-align: left;
-		font-size: rem(50px);
+		font-size: 50px;
 		line-height: 1.34em;
 		font-weight: bold;
 	}
@@ -67,12 +67,12 @@
 }
 
 .mp-top-box {
-	padding-top: rem(74px);
+	padding-top: 74px;
 }
 
 .mp-top-note {
 	max-width: 675px;
-	font-size: rem(30px);
+	font-size: 30px;
 	line-height: 1.333em;
 }
 .slider-project {
@@ -328,7 +328,7 @@
 	z-index: 2;
 }
 .show-details-button {
-	padding: 9px 5px 13px;
+	padding: 9px 5px 13px !important;
 	width: 124px;
 	line-height: 1;
 	height: 35px;
@@ -345,7 +345,7 @@
 }
 .index-main {
 	//transform: translateY(-73px);
-	overflow: hidden;
+	//overflow: hidden;
 	margin-top: -73px;
 	position: relative;
 	&::before {
@@ -1007,6 +1007,65 @@
 .not-event {
 	pointer-events: none;
 }
+.main-html {
+	font-size: 16px;
+	& .header-nav {
+		font-size: 18px;
+	}
+	& .header-right__links > a {
+		font-size: 20px;
+	}
+	& .lang-switcher {
+		font-size: 14px;
+	}
+	& .footer-nav {
+		padding-top: 24px;
+		font-size: 16px;
+	}
+	& .footer-nav ul > li.is-caption {
+		margin-bottom: 15px;
+		font-size: 18px;
+	}
+	& .footer-top {
+		padding: 79px 53px;
+	}
+	& .footer-bottom {
+		padding: 84px 0 50px;
+		font-size: 16px;
+	}
+	& .footer-contact-item {
+		margin-bottom: 20px;
+	}
+	& .footer-socials {
+		margin-top: 45px;
+	}
+	& .footer-copyright {
+		margin-top: 55px;
+		font-size: 12px;
+	}
+	& .footer-logo {
+		margin-top: 45px;
+	}
+	& .regular-btn {
+		font-size: 16px;
+		padding: 12px 32px 14px;
+	}
+	& .page-wrapper {
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+}
+.main-body {
+	font-size: 22px;
+	//overflow-x: hidden;
+	//overflow-y: auto;
+}
+.lang-switcher__cur {
+	pointer-events: none;
+}
+.lang-switcher__cur:after {
+	display: none;
+}
 
 @media (min-resolution: 1.5dppx) {
 	.project-name::before {
@@ -1026,39 +1085,6 @@
 	}
 	.information-wind::before {
 		background-image: url("../pic/wind-icon_2x.png");
-	}
-}
-@media only screen and (max-width: 767px) {
-	
-	.mp-top-section {
-		min-height: 640px;
-		color: #2B6B6A;
-		background-position: calc(100% + 50px) 0;
-		
-		h1 {
-			margin-bottom: 10px;
-			font-size: 24px;
-			color: #2B6B6A;
-			line-height: 1.33333em;
-		}
-		
-	}
-	
-	.mp-top-box {
-		padding-top: rem(82px);
-	}
-	
-	.mp-top-note {
-		font-size: 18px;
-	}
-	.only-mobile-socials {
-		display: block;
-		margin-left: 16px;
-		width: 20px;
-		margin-top: 109px;
-	}
-	.soc-item {
-		margin-bottom: 15px;
 	}
 }
 @media (max-width: 1444px) {
@@ -1164,8 +1190,13 @@
 			height: 16px;
 		}
 	}
-	.show-details-button {
-		font-size: 14px;
+	//.show-details-button {
+	//	font-size: 14px;
+	//}
+	.main-html {
+		& .show-details-button {
+			font-size: 14px;
+		}
 	}
 	.project-start-time {
 		font-size: 12px;
@@ -1276,6 +1307,71 @@
 	.main-investors__item {
 		flex-shrink: 0;
 		margin-right: 15px;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.main-html {
+		& .footer-bottom {
+			font-size: 14px;
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+
+	.mp-top-section {
+		min-height: 640px;
+		color: #2B6B6A;
+		background-position: calc(100% + 50px) 0;
+
+		h1 {
+			margin-bottom: 10px;
+			font-size: 24px;
+			color: #2B6B6A;
+			line-height: 1.33333em;
+		}
+
+	}
+
+	.mp-top-box {
+		padding-top: 82px;
+	}
+
+	.mp-top-note {
+		font-size: 18px;
+	}
+	.only-mobile-socials {
+		display: block;
+		margin-left: 16px;
+		width: 20px;
+		margin-top: 109px;
+	}
+	.soc-item {
+		margin-bottom: 15px;
+	}
+	.main-html {
+		& .header-right__links > a {
+			font-size: 14px;
+		}
+		& .footer-logo {
+			top: 135px;
+		}
+		& .footer-nav {
+			padding-top: 215px;
+		}
+		& .footer-nav ul {
+			margin-bottom: 25px;
+		}
+		& .footer-socials {
+			margin-top: 52px;
+			margin-bottom: 30px;
+		}
+		& .footer-bottom {
+			padding: 70px 0 170px;
+			font-size: 16px;
+		}
+		& .footer-copyright {
+			bottom: 73px;
+		}
 	}
 }
 @media (max-width: 640px) {

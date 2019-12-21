@@ -51,21 +51,6 @@ gulp.task('clean', function() {
 
 gulp.task('img', function() {
 	return gulp.src('app/pic/**/*') // Берем все изображения из app`
-		// .pipe(cache(imagemin([
-		// 	imagemin.gifsicle({interlaced: true}),
-		// 	imagemin.jpegtran({progressive: true}),
-		// 	imagemin.optipng({optimizationLevel: 5}),
-		// 	imagemin.svgo({
-		// 		plugins: [
-		// 			{ optimizationLevel: 3 },
-		// 			{ progessive: true },
-		// 			{ interlaced: true },
-		// 			{ removeViewBox: false },
-		// 			{ removeUselessStrokeAndFill: false },
-		// 			{ cleanupIDs: false }
-		// 		]
-		// 	})
-		// ])))
 		.pipe(gulp.dest('dist/pic')); // Выгружаем на продакшен
 });
 
@@ -90,6 +75,9 @@ gulp.task('build', ['clean', 'img', 'sass'], function() {
 	
 	var buildJSON = gulp.src('app/*.json') // Переносим JSON в продакшен
 		.pipe(gulp.dest('dist'));
+
+	var buildCalc = gulp.src('app/calcCO2/**/*')
+		.pipe(gulp.dest('dist/calcCO2'));
 
 });
 

@@ -1,0 +1,1735 @@
+.CO2Chart__Container, .CO2Chart__Container .legend {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.CO2Chart__Container .legend {
+    margin: 0;
+    padding: 16px 0 0;
+    list-style-type: none;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: #545454
+}
+
+.CO2Chart__Container .legend-item {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.CO2Chart__Container .legend-text {
+    padding: 4px 16px;
+    display: inline-block;
+    border-radius: 32px;
+    background: #fff;
+    boc-shadow: 0 17px 18px rgba(0, 0, 0, .2);
+    border: 1px solid rgba(0, 0, 0, .2)
+}
+
+.CO2Chart__Container .legend-icon {
+    display: inline-block;
+    margin: 0 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ccc
+}
+
+.CO2Chart__ChartWrapper {
+    width: 578px;
+    height: 100%
+}
+
+.CO2Calculator {
+    width: 100%;
+    height: 100%
+}
+
+.CO2Calculator.Desktop {
+    padding: 40px 20px 40px 80px;
+    min-height: 665px;
+    background: #fff
+}
+
+.CO2Calculator.Desktop.step-0 {
+    background: url("../media/MaskGroup(1).80947cc3.png") bottom/contain no-repeat #fff
+}
+
+.CO2Calculator.Desktop.step-1 {
+    background: url("../media/MaskGroup(2).d31f21e5.png") bottom/contain no-repeat #fff
+}
+
+.CO2Calculator.Desktop.step-2 {
+    background: url("../media/MaskGroup(3).83fcf325.png") bottom/contain no-repeat #fff
+}
+
+.CO2Calculator.Desktop.step-3 {
+    background: url("../media/MaskGroup(4).aa5ea772.png") bottom/contain no-repeat #fff
+}
+
+.CO2Calculator.Desktop.step-4 {
+    background: url("../media/MaskGroup(5).092d2558.png") bottom/contain no-repeat #fff
+}
+
+.CO2Calculator.Desktop.step-5 {
+    background: url("../media/MaskGroup(6).f9649f1a.png") bottom/contain no-repeat #fff
+}
+
+.CO2Calculator.Desktop.step-0 .CO2Calculator__Title__Value {
+    font-size: 30px
+}
+
+.CO2Calculator.Desktop.step-2 .CO2Calculator__Content {
+    padding: 30px 30px 30px 45px
+}
+
+.CO2Calculator.Desktop.step-2 .CO2Calculator__Title h2 {
+    margin-bottom: 25px
+}
+
+.CO2Calculator.Desktop.step-2 .form-col-label {
+    flex: 1 0 125px
+}
+
+.CO2Calculator.Desktop.step-3 .form-col-label {
+    flex: 1 0 30%
+}
+
+.CO2Calculator.Desktop.step-4 .CO2Calculator__Content {
+    padding: 0;
+    border-color: transparent;
+    background-color: transparent
+}
+
+.CO2Calculator.Desktop.step-4 .CO2Calculator__Content .result-lead {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #545454
+}
+
+.CO2Calculator.Desktop.step-4 .CO2Calculator__Content .result-lead-small {
+    max-width: 50%;
+    margin: 40px 0;
+    font-size: 14px;
+    color: #545454
+}
+
+.CO2Calculator.Desktop.step-4 .CO2Calculator__Content .result-form-part {
+    max-width: 50%
+}
+
+.CO2Calculator.Desktop.step-4 .content-col.col8, .CO2Calculator.Desktop.step-4 .content-nav {
+    justify-content: flex-start
+}
+
+.CO2Calculator.Desktop.step-5 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+
+.CO2Calculator.Desktop.step-5 .content-row {
+    width: 70%
+}
+
+.CO2Calculator.Desktop.step-5 .col-first {
+    display: none
+}
+
+.CO2Calculator.Desktop.step-5 .col-second {
+    flex: 0 0 100%;
+    max-width: 100%
+}
+
+.CO2Calculator.Desktop.step-5 .content-nav .content-col.col4 {
+    display: none
+}
+
+.CO2Calculator.Desktop.step-5 .content-nav .content-col.col8 {
+    flex: 0 0 100%;
+    justify-content: flex-start
+}
+
+.CO2Calculator.Desktop.step-5 .content-nav {
+    padding: 0
+}
+
+.CO2Calculator.Desktop.step-5 .CO2Calculator__Content {
+    padding: 0;
+    border-color: transparent;
+    background-color: transparent
+}
+
+.CO2Calculator.Desktop.step-5 .CO2Calculator__Content .done {
+    margin-bottom: 40px
+}
+
+.CO2Calculator.Desktop.step-5 .CO2Calculator__Content .done-lead {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #2b6b6a
+}
+
+.CO2Calculator.Desktop.step-5 .CO2Calculator__Content .done-lead-small {
+    font-size: 20px;
+    color: #545454
+}
+
+.CO2Calculator.Desktop .Stepper .MuiStepIcon-text {
+    display: none
+}
+
+.CO2Calculator.Desktop .Stepper .MuiSvgIcon-root {
+    width: 7px;
+    height: 7px;
+    -webkit-transform: translate3d(9px, 0, 0);
+    transform: translate3d(9px, 0, 0)
+}
+
+.CO2Calculator.Desktop .Stepper .MuiStepConnector-root {
+    padding: 0;
+    min-height: 75px
+}
+
+.CO2Calculator.Desktop .Stepper .MuiStepConnector-root .MuiStepConnector-lineVertical {
+    min-height: 75px
+}
+
+.CO2Calculator.Desktop .Stepper .MuiStepLabel-root {
+    position: relative
+}
+
+.CO2Calculator.Desktop .Stepper .MuiStepLabel-label {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform: translate3d(35px, 25px, 0);
+    transform: translate3d(35px, 25px, 0);
+    font-size: 20px
+}
+
+.CO2Calculator.Desktop .Stepper .MuiStep-vertical {
+    position: relative
+}
+
+.CO2Calculator.Desktop .Stepper .MuiStep-vertical:last-of-type .MuiStepLabel-labelContainer, .CO2Calculator.Desktop .Stepper .MuiStepLabel-vertical.Index .MuiSvgIcon-root {
+    display: none
+}
+
+.CO2Calculator.Desktop .Stepper .MuiStepLabel-vertical.Index .MuiStepLabel-label {
+    -webkit-transform: translate3d(-25px, 25px, 0);
+    transform: translate3d(-25px, 25px, 0)
+}
+
+.CO2Calculator.Desktop .Stepper .MuiStepConnector-active .MuiStepConnector-line:before {
+    background: transparent !important
+}
+
+.CO2Calculator.Desktop .Stepper .MuiStepConnector-active .MuiStepConnector-line {
+    border-color: #00c6a2
+}
+
+.CO2Calculator.Desktop .Stepper .MuiTypography-root.MuiStepLabel-label.MuiStepLabel-completed {
+    color: #00c6a2
+}
+
+.CO2Calculator.Desktop .Stepper .MuiStepLabel-iconContainer .MuiSvgIcon-root.MuiStepIcon-root.MuiStepIcon-active, .CO2Calculator.Desktop .Stepper .MuiStepLabel-iconContainer .MuiSvgIcon-root.MuiStepIcon-root.MuiStepIcon-completed {
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00c6a2, 0 0 6px #fff, inset 0 2px 3px #23eec9, inset 0 -2px 2px rgba(0, 0, 0, .13)
+}
+
+.CO2Calculator.Desktop .Stepper .MuiStep-completed .Index:after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: #00c6a2;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-transform: translate3d(9px, -4px, 0);
+    transform: translate3d(9px, -4px, 0);
+    z-index: 200
+}
+
+.CO2Calculator.Desktop .CO2Calculator__Title {
+    margin-bottom: 20px
+}
+
+.CO2Calculator.Desktop .CO2Calculator__Title h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #2b6b6a !important
+}
+
+.CO2Calculator.Desktop .CO2Calculator__Title__Label {
+    display: inline-block;
+    padding: 0 4px;
+    font-weight: 500;
+    line-height: 159.61%;
+    color: #ff522a
+}
+
+.CO2Calculator.Desktop .CO2Calculator__Title__Value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px 0 6px;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    background: linear-gradient(47.67deg, #ff522a 14.82%, rgba(255, 82, 42, 0) 212.62%, #ff522a 0)
+}
+
+.CO2Calculator.Desktop .CO2Calculator__Title__Size {
+    font-size: 18px;
+    line-height: 159.61%;
+    color: #ff522a
+}
+
+.CO2Calculator.Desktop .CO2Calculator__Content {
+    padding: 30px 65px;
+    border: 1px solid rgba(84, 84, 84, .2);
+    border-radius: 4px;
+    background: #fff
+}
+
+.CO2Calculator.Desktop .MuiStepConnector-active .MuiStepConnector-line, .CO2Calculator.Desktop .MuiStepConnector-completed .MuiStepConnector-line {
+    border-color: #00c6a2 !important
+}
+
+.CO2Calculator.Mobile {
+    min-height: 812px;
+    padding: 0 15px;
+    background: #fff
+}
+
+.CO2Calculator.Mobile.step-0 {
+    background: url("../media/MaskGroup(1)-mobile.ac32a2aa.png") bottom/cover no-repeat #fff
+}
+
+.CO2Calculator.Mobile.step-1 {
+    background: url("../media/MaskGroup(2)-mobile.0a697608.png") bottom/cover no-repeat #fff
+}
+
+.CO2Calculator.Mobile.step-2 {
+    background: url("../media/MaskGroup(3)-mobile.267a6073.png") bottom/cover no-repeat #fff
+}
+
+.CO2Calculator.Mobile.step-3 {
+    background: url("../media/MaskGroup(4)-mobile.d9e91995.png") bottom/cover no-repeat #fff
+}
+
+.CO2Calculator.Mobile.step-4 {
+    background: url("../media/MaskGroup(5)-mobile.42c9b72d.png") bottom/cover no-repeat #fff
+}
+
+.CO2Calculator.Mobile.step-5 {
+    background: url("../media/MaskGroup(6)-mobile.12e91dce.png") bottom/cover no-repeat #fff
+}
+
+.CO2Calculator.Mobile.step-0 .CO2Calculator__Title__Value {
+    font-size: 30px
+}
+
+.CO2Calculator.Mobile.step-1 .Step__Label-Mobile {
+    margin-bottom: 80px
+}
+
+.CO2Calculator.Mobile.step-2 .form-combine-inputs .form-combine-input {
+    width: 48%
+}
+
+.CO2Calculator.Mobile.step-2 .Step__Label-Mobile {
+    margin-bottom: 20px
+}
+
+.CO2Calculator.Mobile.step-3 .Step__Label-Mobile {
+    margin-bottom: 30px
+}
+
+.CO2Calculator.Mobile.step-3 .btn-navigation.prev .btn-symbol {
+    color: #00c6a2
+}
+
+.CO2Calculator.Mobile.step-4 .CO2Calculator__Content {
+    padding: 0;
+    border-color: transparent;
+    background-color: transparent
+}
+
+.CO2Calculator.Mobile.step-4 .CO2Calculator__Content .result-lead {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #545454
+}
+
+.CO2Calculator.Mobile.step-4 .CO2Calculator__Content .result-lead-small {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #545454
+}
+
+.CO2Calculator.Mobile.step-5 .CO2Calculator__Content {
+    border-color: transparent;
+    background-color: transparent
+}
+
+.CO2Calculator.Mobile.step-5 .CO2Calculator__Content .done {
+    padding-top: 200px
+}
+
+.CO2Calculator.Mobile.step-5 .CO2Calculator__Content .done-lead {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 40px;
+    color: #2b6b6a
+}
+
+.CO2Calculator.Mobile.step-5 .CO2Calculator__Content .done-lead-small {
+    font-size: 18px;
+    text-align: center;
+    color: #545454
+}
+
+.CO2Calculator.Mobile .content-row {
+    flex-direction: column
+}
+
+.CO2Calculator.Mobile .content-row.content-nav .content-col {
+    justify-content: center
+}
+
+.CO2Calculator.Mobile .Stepper .MuiStepIcon-root {
+    color: #ededed;
+    opacity: 1
+}
+
+.CO2Calculator.Mobile .Stepper .MuiStepIcon-root.MuiStepIcon-active, .CO2Calculator.Mobile .Stepper .MuiStepIcon-root.MuiStepIcon-completed {
+    color: #00c6a2
+}
+
+.CO2Calculator.Mobile .Stepper .MuiStepIcon-text {
+    display: none
+}
+
+.CO2Calculator.Mobile .Stepper .MuiSvgIcon-root {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    -webkit-transform: translate3d(0, 9px, 0);
+    transform: translate3d(0, 9px, 0);
+    z-index: 100
+}
+
+.CO2Calculator.Mobile .Stepper .MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+    font-size: 20px;
+    -webkit-transform: translate3d(calc(50% + 10px), -45px, 0);
+    transform: translate3d(calc(50% + 10px), -45px, 0)
+}
+
+.CO2Calculator.Mobile .Stepper .MuiStep-horizontal {
+    position: relative
+}
+
+.CO2Calculator.Mobile .Stepper .MuiStep-horizontal:last-of-type .MuiStepLabel-labelContainer {
+    display: none
+}
+
+.CO2Calculator.Mobile .Stepper .MuiStepLabel-iconContainer .MuiSvgIcon-root.MuiStepIcon-root.MuiStepIcon-active, .CO2Calculator.Mobile .Stepper .MuiStepLabel-iconContainer .MuiSvgIcon-root.MuiStepIcon-root.MuiStepIcon-completed {
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00c6a2, 0 0 6px #fff, inset 0 2px 3px #23eec9, inset 0 -2px 2px rgba(0, 0, 0, .13)
+}
+
+.CO2Calculator.Mobile .Stepper .MuiStepConnector-active .MuiStepConnector-line:before {
+    background: #00c6a2 !important
+}
+
+.CO2Calculator.Mobile .Stepper .MuiStep-completed .MuiStepLabel-iconContainer:after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: #00c6a2;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-transform: translate3d(0, 9px, 0);
+    transform: translate3d(0, 9px, 0);
+    z-index: 200
+}
+
+.CO2Calculator.Mobile .Step__Label-Mobile {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    color: #00c6a2;
+    font-weight: 500
+}
+
+.CO2Calculator.Mobile .CO2Calculator__Title h2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #2b6b6a !important
+}
+
+.CO2Calculator.Mobile .CO2Calculator__Title__Label {
+    display: inline-block;
+    padding: 0 4px;
+    font-weight: 500;
+    line-height: 159.61%;
+    color: #ff522a
+}
+
+.CO2Calculator.Mobile .CO2Calculator__Title__Value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px 0 6px;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    background: linear-gradient(47.67deg, #ff522a 14.82%, rgba(255, 82, 42, 0) 212.62%, #ff522a 0)
+}
+
+.CO2Calculator.Mobile .CO2Calculator__Title__Size {
+    font-size: 18px;
+    line-height: 159.61%;
+    color: #ff522a
+}
+
+.CO2Calculator.Mobile .wrapper-one {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    justify-content: center
+}
+
+.CO2Calculator.Mobile .wrapper-two {
+    padding-left: 20px;
+    width: 100%;
+    text-align: center;
+    justify-content: center
+}
+
+.CO2Calculator.Mobile .form-row {
+    margin: 0;
+    flex-direction: column
+}
+
+.CO2Calculator.Mobile .form-col {
+    width: 100%;
+    min-height: 50px;
+    padding: 0 30px
+}
+
+.CO2Calculator.Mobile .form-label {
+    padding: 0;
+    min-height: 50px
+}
+
+.CO2Calculator.Mobile .MuiPaper-root {
+    padding: 24px 0 0
+}
+
+.CO2Calculator.Mobile .MuiFormControl-root {
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0)
+}
+
+.CO2Calculator.Mobile .form-label-index {
+    -webkit-transform: translate3d(-35px, -11px, 0);
+    transform: translate3d(-35px, -11px, 0)
+}
+
+.CO2Calculator.Mobile .content-nav {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.CO2Calculator.Mobile .btn-navigation.prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 45px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #00c6a2;
+    background: hsla(0, 0%, 100%, .2)
+}
+
+.CO2Calculator.Mobile .btn-navigation.prev.white {
+    color: #fff;
+    border-color: #fff
+}
+
+.CO2Calculator.Mobile .btn-navigation.prev .btn-text {
+    display: none
+}
+
+.CO2Calculator.Mobile .btn-navigation.prev .btn-symbol {
+    padding: 0;
+    -webkit-transform: scale(1.4) translateZ(0);
+    transform: scale(1.4) translateZ(0);
+    color: #fff
+}
+
+.CO2Calculator.Mobile .MuiStepLabel-completed {
+    color: #00c6a2
+}
+
+.CO2Calculator.Mobile .MuiStepConnector-active .MuiStepConnector-line, .CO2Calculator.Mobile .MuiStepConnector-completed .MuiStepConnector-line {
+    border-color: #00c6a2
+}
+
+.CO2Calculator .CO2Calculator__Content {
+    position: relative
+}
+
+.CO2Calculator .MuiStepLabel-label.MuiStepLabel-active.MuiStepLabel-alternativeLabel {
+    margin-top: 16px !important
+}
+
+.CO2Calculator .MuiPaper-root {
+    background-color: transparent
+}
+
+.CO2Calculator .col-first {
+    order: 1
+}
+
+.CO2Calculator .col-second {
+    order: 2
+}
+
+.CO2Calculator .col-third {
+    order: 3
+}
+
+.CO2Calculator .wrapper-one, .CO2Calculator .wrapper-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.CO2Calculator .form-row {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.CO2Calculator .form-col {
+    width: 50%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center
+}
+
+.CO2Calculator .form-label {
+    position: relative;
+    padding-top: 15px;
+    width: 100%;
+    min-height: 60px;
+    margin: 0;
+    display: flex;
+    align-items: center
+}
+
+.CO2Calculator .form-label-index {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #2b6b6a;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #2b6b6a;
+    -webkit-transform: translate3d(-35px, -25%, 0);
+    transform: translate3d(-35px, -25%, 0)
+}
+
+.CO2Calculator .form-label-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #545454
+}
+
+.CO2Calculator .form-combine-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.CO2Calculator .MuiFormControl-root {
+    position: relative
+}
+
+.CO2Calculator .MuiFormControl-root .form-input-unit {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 16px;
+    line-height: 21px;
+    color: #545454;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0)
+}
+
+.CO2Calculator .p0 {
+    padding: 0 !important
+}
+
+.CO2Calculator .mr1 {
+    margin-right: 16px
+}
+
+.CO2Calculator .dNone {
+    display: none
+}
+
+.CO2Calculator .content-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row
+}
+
+.CO2Calculator .content-col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.CO2Calculator .col12 {
+    width: 100%;
+    flex: 0 0 100%
+}
+
+.CO2Calculator .col8 {
+    width: 66.666%;
+    flex: 0 0 66.666%
+}
+
+.CO2Calculator .col4 {
+    width: 33.333%;
+    flex: 0 0 33.333%
+}
+
+.CO2Calculator .content-nav {
+    padding: 30px 15px;
+    justify-content: flex-end
+}
+
+.CO2Calculator .content-row.content-nav .content-col {
+    flex-direction: row;
+    justify-content: flex-end
+}
+
+.CO2Calculator .btn-navigation .btn-symbol {
+    display: inline-block;
+    -webkit-transform: scale(1.4) translateZ(0);
+    transform: scale(1.4) translateZ(0)
+}
+
+.CO2Calculator .btn-navigation.next .btn-symbol {
+    padding-left: 15px
+}
+
+.CO2Calculator .btn-navigation.next.Mui-disabled {
+    color: #ff522a !important
+}
+
+.CO2Calculator .btn-navigation.prev .btn-symbol {
+    padding-right: 15px
+}
+
+.CO2Calculator .MuiStepLabel-label {
+    color: #545454;
+    opacity: .2;
+    font-weight: 500
+}
+
+.CO2Calculator .MuiStepLabel-label.MuiStepLabel-active, .CO2Calculator .MuiStepLabel-label.MuiStepLabel-completed {
+    opacity: 1
+}
+
+.CO2Calculator .MuiStepIcon-root {
+    border-radius: 50%;
+    color: #e9e9e9;
+    box-shadow: 0 0 6px #fff, inset 0 2px 3px #ededed, inset 0 -2px 2px rgba(0, 0, 0, .13);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.CO2Calculator .MuiStepConnector-line {
+    border-color: #e9e9e9
+}
+
+.CO2Calculator .MuiButton-outlinedPrimary {
+    color: #00c6a2 !important
+}
+
+.CO2Calculator .MuiStepConnector-alternativeLabel {
+    left: -50%;
+    right: 50%
+}
+
+:root {
+    --primaryDark: #388873;
+    --primaryMain: #00c6a2;
+    --primaryMainSecond: #3fe6c7;
+    --primaryMainThird: #33dbbd;
+    --primaryLight: #c7fceb;
+    --primaryContrastText: #fff;
+    --secondaryDark: #a28e5b;
+    --secondaryMain: #ebc200;
+    --secondaryMainSecond: #e8bf07;
+    --secondaryMainThird: #fcdf51;
+    --secondaryLight: #ffefca;
+    --secondaryContrastText: #fff;
+    --errorDark: #f8b0a3;
+    --errorMain: #ff473c;
+    --errorMainSecond: #ff281a;
+    --errorMainThird: #ff685f;
+    --errorLight: #ffe5db;
+    --errorContrastText: #fff;
+    --linkMain: #00b2ed;
+    --linkMainSecond: #69def4;
+    --textPrimary: #545454;
+    --textSecondary: rgba(84, 84, 84, 0.5);
+    --textNavBar: #161e37;
+    --shadowPrimary: rgba(0, 198, 162, 0.25);
+    --shadowSecondary: rgba(239, 198, 0, 0.25);
+    --shadowError: rgba(255, 40, 26, 0.25);
+    --shadowLink: rgba(0, 178, 237, 0.25);
+    --shadowBox: rgba(41, 53, 79, 0.1);
+    --backgroundGray: #fafafa;
+    --gradientPrimary: linear-gradient(180deg, #00c6a2, #3fe6c7);
+    --gradientSecondary: linear-gradient(180deg, #e8bf07, #fcdf51);
+    --gradientError: linear-gradient(180deg, #ff281a, #ff685f);
+    --gradientLink: linear-gradient(180deg, #00b2ed, #69def4);
+    --gradientHeader: linear-gradient(173.83deg, rgba(4, 13, 37, 0.5), rgba(3, 16, 52, 0.415) 61.02%);
+    --gradientHeaderTop: linear-gradient(177.16deg, rgba(4, 13, 37, 0.89), rgba(3, 16, 52, 0.7387) 61.02%);
+    --inputUnderline: rgba(84, 84, 84, 0.3);
+    --headerTopBackground: #fff;
+    --footerBackground: #fff;
+    --footerGeneralBackground: #f5f5f5;
+    --footerAdditionalBackground: #e1e1e1;
+    --checkboxBackground: #00c6a2;
+    --socialBackFacebook: #4e71ab;
+    --socialBackInstagram: #545454;
+    --socialBackYoutube: #e04f5f;
+    --socialBackLinkedin: #2797cf;
+    --socialBackTwitter: #00aeef;
+    --gradientAuthPage: linear-gradient(149.88deg, rgba(4, 13, 37, 0.89), rgba(3, 16, 52, 0.7387) 33%);
+    --shadowPrimaryLight: rgba(76, 247, 216, 0.8);
+    --linkMainDark: rgba(234, 243, 245, 0.7);
+    --avatarBackground: #fff;
+    --scrollBarColor: rgba(134, 158, 180, 0.35)
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    min-width: 140px
+}
+
+.btn:hover {
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, .5)
+}
+
+.btn:not(:disabled):not(.disabled).active, .btn:not(:disabled):not(.disabled):active {
+    background-image: inherit
+}
+
+.btn-danger {
+    background-color: #fd5833;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fd7a5c), to(#fd5832));
+    background-image: linear-gradient(180deg, #fd7a5c, #fd5832)
+}
+
+.btn-danger:hover {
+    background-color: #fd6744
+}
+
+.btn-danger:not(:disabled):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .show > .btn-danger.dropdown-toggle {
+    background-color: #fd5832
+}
+
+.btn-danger.focus, .btn-danger:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .btn-danger:not(:disabled):not(.disabled):active:focus, .show > .btn-danger.dropdown-toggle:focus {
+    box-shadow: 0 0 0 3px rgba(243, 103, 68, .25)
+}
+
+.btn-primary {
+    background-color: #078fd1;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#02a9d5), to(#078fd1));
+    background-image: linear-gradient(180deg, #02a9d5, #078fd1)
+}
+
+.btn-primary:hover {
+    background-color: #0790d1
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    background-color: #078fd1
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 3px rgba(7, 134, 199, .25)
+}
+
+.btn-warning {
+    background-color: #f99834;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc831), to(#f99834));
+    background-image: linear-gradient(180deg, #ffc831, #f99834)
+}
+
+.btn-warning, .btn-warning:hover, .btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active, .btn:not(:disabled):not(.disabled):active, .show > .btn-warning.dropdown-toggle {
+    color: #fff
+}
+
+.btn-warning:hover {
+    background-color: #fcaf33
+}
+
+.btn-warning:not(:disabled):not(.disabled).active, .btn-warning:not(:disabled):not(.disabled):active, .show > .btn-warning.dropdown-toggle {
+    background-color: #f99834
+}
+
+.btn-warning:not(:disabled):not(.disabled).active:focus, .btn-warning:not(:disabled):not(.disabled):active:focus, .show > .btn-warning.dropdown-toggle:focus {
+    box-shadow: 0 0 0 3px rgba(239, 141, 53, .25)
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #fff
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}
+
+.custom-select.is-invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .was-validated .form-control:invalid {
+    border-color: #ff5e52
+}
+
+.modal-header {
+    position: relative;
+    border-bottom: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px
+}
+
+.modal-header .close {
+    margin-left: 0;
+    float: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    z-index: 1
+}
+
+.modal-title {
+    font-size: 35px
+}
+
+.modal-body {
+    font-size: 20px;
+    padding-bottom: 30px
+}
+
+.modal-footer {
+    justify-content: center
+}
+
+.popover_header_alone .arrow:after {
+    border-top-color: #f7f7f7
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 770px
+    }
+
+    .modal-body, .modal-footer {
+        padding-left: 100px;
+        padding-right: 100px
+    }
+}
+
+.App .MuiButton-contained {
+    box-shadow: none
+}
+
+.App .MuiButton-containedPrimary {
+    background: #00c6a2 -webkit-gradient(linear, left top, left bottom, from(#00c6a2), to(#3fe6c7));
+    background: #00c6a2 linear-gradient(180deg, #00c6a2, #3fe6c7);
+    background: var(--primaryMain) var(--gradientPrimary)
+}
+
+.App .MuiButton-containedPrimary:hover {
+    background: #00c6a2;
+    background: var(--primaryMain);
+    box-shadow: 0 9px 7px rgba(0, 198, 162, .25);
+    box-shadow: 0 9px 7px var(--shadowPrimary)
+}
+
+.App .MuiButton-containedSecondary {
+    background: #ebc200 -webkit-gradient(linear, left top, left bottom, from(#e8bf07), to(#fcdf51));
+    background: #ebc200 linear-gradient(180deg, #e8bf07, #fcdf51);
+    background: var(--secondaryMain) var(--gradientSecondary)
+}
+
+.App .MuiButton-containedSecondary:hover {
+    background: #ebc200;
+    background: var(--secondaryMain);
+    box-shadow: 0 9px 7px rgba(239, 198, 0, .25);
+    box-shadow: 0 9px 7px var(--shadowSecondary)
+}
+
+.App .MuiButtonBase-root:focus {
+    outline: none
+}
+
+.App .Mui-focused fieldset, .App label.Mui-focused {
+    color: #545454;
+    color: var(--textPrimary)
+}
+
+.App .MuiInput-underline:before {
+    border-bottom-color: rgba(84, 84, 84, .3);
+    border-bottom-color: var(--inputUnderline)
+}
+
+.App .MuiInput-underline:after {
+    border-bottom-color: #545454;
+    border-bottom-color: var(--textPrimary)
+}
+
+.App .MuiInputAdornment-root .MuiSvgIcon-root {
+    font-size: 16px
+}
+
+.App .MuiFormControl-root.form-control {
+    width: 100%
+}
+
+.App .MuiTypography-body1 {
+    color: #545454;
+    color: var(--textPrimary)
+}
+
+.App .MuiFormLabel-root {
+    overflow: hidden;
+    max-width: 90%;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.App .MuiFormLabel-root.Mui-error {
+    color: #ff473c;
+    color: var(--errorMain)
+}
+
+.App .required-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: scale(1.1) translate3d(-10px, -5px, 0);
+    transform: scale(1.1) translate3d(-10px, -5px, 0);
+    color: #00b2ed;
+    color: var(--linkMain)
+}
+
+.App .required-field.required-field-date {
+    -webkit-transform: scale(1.1) translate3d(3px, -30px, 0);
+    transform: scale(1.1) translate3d(3px, -30px, 0)
+}
+
+@media (max-width: 575.98px) {
+    .App .required-field.required-field-date {
+        -webkit-transform: scale(1.1) translate3d(3px, -40px, 0);
+        transform: scale(1.1) translate3d(3px, -40px, 0)
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .App .required-field.required-field-date {
+        -webkit-transform: scale(1.1) translate3d(3px, -40px, 0);
+        transform: scale(1.1) translate3d(3px, -40px, 0)
+    }
+}
+
+.App .required-field.required-field-checkbox {
+    -webkit-transform: scale(1.1) translate3d(-11px, -17px, 0);
+    transform: scale(1.1) translate3d(-11px, -17px, 0)
+}
+
+.App .required-field.error {
+    color: #ff473c;
+    color: var(--errorMain)
+}
+
+@media (max-width: 575.98px) {
+    .App .form-group {
+        margin-bottom: 0
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .App .form-group {
+        margin-bottom: 0
+    }
+}
+
+@media (max-width: 575.98px) {
+    .App .form-input-label-mob {
+        font-size: 14px
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .App .form-input-label-mob {
+        font-size: 14px
+    }
+}
+
+.App .form-col {
+    min-height: 60px
+}
+
+@media (max-width: 575.98px) {
+    .App .form-col {
+        min-height: 75px
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .App .form-col {
+        min-height: 75px
+    }
+}
+
+@media (max-width: 575.98px) {
+    .App .form-col-mob {
+        min-height: 45px
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .App .form-col-mob {
+        min-height: 45px
+    }
+}
+
+.App .form-subtitle {
+    color: rgba(84, 84, 84, .2)
+}
+
+.App .form-checkbox-small {
+    -webkit-transform: translate3d(30px, -6px, 0);
+    transform: translate3d(30px, -6px, 0)
+}
+
+.App .form-checkbox-small a, .App .form-checkbox-small a:hover {
+    color: #00b2ed;
+    color: var(--linkMain)
+}
+
+.App .google-places-autocomplete {
+    z-index: 30
+}
+
+.App .google-places-autocomplete .MuiFormControl-root {
+    margin: 0
+}
+
+.App .google-places-autocomplete .MuiFormLabel-root.Mui-error {
+    color: rgba(84, 84, 84, .5);
+    color: var(--textSecondary)
+}
+
+.App .google-places-autocomplete .suggestion-container {
+    padding: 5px;
+    background-color: #fafafa;
+    box-shadow: 0 9px 14px rgba(4, 13, 37, .04), 0 1px 8px rgba(4, 13, 37, .08);
+    border-radius: 2px;
+    font-size: 14px
+}
+
+.App .google-places-autocomplete .suggestion {
+    padding: 5px
+}
+
+.App .google-places-autocomplete .suggestion:hover {
+    cursor: pointer;
+    background-color: rgba(234, 243, 245, .7)
+}
+
+.App .KeyboardDatePicker .MuiFormLabel-root.Mui-error {
+    color: rgba(84, 84, 84, .5);
+    color: var(--textSecondary)
+}
+
+.App .MuiButton-textPrimary, .modal-content .MuiButton-textPrimary {
+    background: -webkit-gradient(linear, left top, left bottom, from(#00c6a2), to(#3fe6c7));
+    background: linear-gradient(180deg, #00c6a2, #3fe6c7);
+    background: var(--gradientPrimary)
+}
+
+.App .MuiButton-textSecondary, .modal-content .MuiButton-textSecondary {
+    background: -webkit-gradient(linear, left top, left bottom, from(#e8bf07), to(#fcdf51));
+    background: linear-gradient(180deg, #e8bf07, #fcdf51);
+    background: var(--gradientSecondary)
+}
+
+.App .MuiCheckbox-colorSecondary.Mui-checked, .modal-content .MuiCheckbox-colorSecondary.Mui-checked {
+    color: #00c6a2;
+    color: var(--checkboxBackground)
+}
+
+.App .MuiButton-root, .modal-content .MuiButton-root {
+    min-height: 45px;
+    min-width: 180px;
+    border-radius: 32px;
+    text-transform: none;
+    -webkit-transition: background-color .45s linear, box-shadow .45s linear;
+    transition: background-color .45s linear, box-shadow .45s linear;
+    color: #fff;
+    color: var(--primaryContrastText)
+}
+
+.App .MuiButton-root:focus, .modal-content .MuiButton-root:focus {
+    outline: none
+}
+
+.App .MuiButton-root.error, .modal-content .MuiButton-root.error {
+    background: #ff473c -webkit-gradient(linear, left top, left bottom, from(#ff281a), to(#ff685f));
+    background: #ff473c linear-gradient(180deg, #ff281a, #ff685f);
+    background: var(--errorMain) var(--gradientError);
+    color: var(--white)
+}
+
+.App .MuiButton-root.error:hover, .modal-content .MuiButton-root.error:hover {
+    background: #ff473c;
+    background: var(--errorMain);
+    box-shadow: 0 9px 7px rgba(255, 40, 26, .25);
+    box-shadow: 0 9px 7px var(--shadowError)
+}
+
+.App .MuiButton-root.link, .modal-content .MuiButton-root.link {
+    background: #00b2ed -webkit-gradient(linear, left top, left bottom, from(#00b2ed), to(#69def4));
+    background: #00b2ed linear-gradient(180deg, #00b2ed, #69def4);
+    background: var(--linkMain) var(--gradientLink);
+    color: var(--white)
+}
+
+.App .MuiButton-root.link:hover, .modal-content .MuiButton-root.link:hover {
+    background: #00b2ed;
+    background: var(--linkMain);
+    box-shadow: 0 9px 7px rgba(0, 178, 237, .25);
+    box-shadow: 0 9px 7px var(--shadowLink)
+}
+
+.MuiMenu-list {
+    background-color: #fafafa;
+    background-color: var(--backgroundGray);
+    border-radius: 2px;
+    box-shadow: 0 9px 14px rgba(4, 13, 37, .04), 1px 8px rgba(4, 13, 37, .08)
+}
+
+.MuiMenu-list .MuiMenuItem-root {
+    font-size: 14px
+}
+
+.MuiListItem-button:hover, .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+    background-color: rgba(234, 243, 245, .7) !important;
+    background-color: var(--linkMainDark) !important
+}
+
+#menu-Country .MuiPaper-root {
+    max-height: 200px
+}
+
+#menu-Country .MuiPaper-root::-webkit-scrollbar {
+    height: 8px;
+    width: 6px
+}
+
+#menu-Country .MuiPaper-root::-webkit-scrollbar-track-piece {
+    background: transparent
+}
+
+#menu-Country .MuiPaper-root::-webkit-scrollbar-thumb:horizontal, #menu-Country .MuiPaper-root::-webkit-scrollbar-thumb:vertical {
+    background: rgba(134, 158, 180, .35);
+    background: var(--scrollBarColor);
+    border-radius: 20px
+}
+
+.App .MuiAvatar-root.MuiAvatar-colorDefault {
+    background-color: #fff;
+    background-color: var(--avatarBackground)
+}
+
+.App .MuiAvatar-root {
+    width: 36px;
+    height: 36px
+}
+
+@font-face {
+    font-family: LatoWebRegular;
+    src: url(../media/LatoWeb-Regular.6d4e7822.ttf)
+}
+
+@font-face {
+    font-family: LatoWebRegular;
+    font-weight: 700;
+    src: url(../media/LatoWeb-Bold.5b1b8b85.ttf)
+}
+
+@font-face {
+    font-family: LatoWebLight;
+    src: url(../media/LatoWeb-Light.cf44fd55.ttf)
+}
+
+@font-face {
+    font-family: LatoWebSemibold;
+    src: url(../media/LatoWeb-Semibold.3b0cd725.ttf)
+}
+
+body, html {
+    height: 100%;
+    font-size: 16px;
+    font-family: LatoWebRegular, Roboto, sans-serif;
+    color: #212529
+}
+
+.hide {
+    display: none
+}
+
+#app {
+    height: 100%;
+    min-width: 360px
+}
+
+.select-arrow-white {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAHCAYAAADXhRcnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkZTM5YjVhMi03OGRkLTRhZmUtOWI0MC1mNmVkMjBjMWIyNGYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjE4OUE5ODAxNzFDMTFFODkyQkNFRUY4NTdFRTJGQ0QiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjE4OUE5N0YxNzFDMTFFODkyQkNFRUY4NTdFRTJGQ0QiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpjMDJjYjg2Yy1mNmMyLWI1NDQtOTdlOC04MGJmNDQ1OGFjNGMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoyODBkNWM1OS1hZTFmLTExNzctYTcyNS1jMzE2NzExMjllNmQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4KGkfnAAAAhElEQVR42mL4////QyDOAGIGEjBI/UMQwwiInwNxBxAzEtDECFUHUm8EE5QD4qtAvAKI2XFoBImvhKoDqWdAluQH4n1AfBiIhdA0CkHF90HVMaBrBmE2IF4IxDeBWAkqpgTlL4TKM+DSDPNXExC/AuIUKN2ELTzwBU4iEH+A0ljVAAQYAAmmTmjV8MPgAAAAAElFTkSuQmCC) 96% no-repeat !important
+}
+
+.select-arrow-black, .select-arrow-white {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer
+}
+
+.select-arrow-black {
+    background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAHCAYAAAA4R3wZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkZTM5YjVhMi03OGRkLTRhZmUtOWI0MC1mNmVkMjBjMWIyNGYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzQ4RjhDRjYxMENFMTFFOEI2RDlFMTU4QzEzNzNEOTEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzQ4RjhDRjUxMENFMTFFOEI2RDlFMTU4QzEzNzNEOTEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpjMDJjYjg2Yy1mNmMyLWI1NDQtOTdlOC04MGJmNDQ1OGFjNGMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoyODBkNWM1OS1hZTFmLTExNzctYTcyNS1jMzE2NzExMjllNmQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6i6xTEAAAAcUlEQVR42mJgYGB4CMTBDMSDYKgeBgsgfgfESURoSoKqtYAJ6ALxCyAuwqOpCKpGF11CBYgfAHEzFk3NUDkVXKbKAPE1IJ4CxIxQPAUqJoOskBGLZlEg3gbEN6B8DSD2AuLXxIQcPxDvhWJ+bAoAAgwAaeYTPHjOS5kAAAAASUVORK5CYII=) 96% no-repeat !important
+}
+
+.app-input {
+    background-color: #fff
+}
+
+.app-input_grey, .app-input_grey:focus {
+    background-color: #6c7e85;
+    border-color: #6c7e85;
+    color: #fff
+}
+
+.app-input_grey::-webkit-input-placeholder {
+    color: #fff
+}
+
+.app-input_grey::-moz-placeholder {
+    color: #fff
+}
+
+.app-input_grey:-ms-input-placeholder {
+    color: #fff
+}
+
+.app-input_grey::-ms-input-placeholder {
+    color: #fff
+}
+
+.app-input_grey::placeholder {
+    color: #fff
+}
+
+.app-input_grey:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 3px hsla(0, 0%, 100%, .25)
+}
+
+select.app-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAHCAYAAAA4R3wZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkZTM5YjVhMi03OGRkLTRhZmUtOWI0MC1mNmVkMjBjMWIyNGYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzQ4RjhDRjYxMENFMTFFOEI2RDlFMTU4QzEzNzNEOTEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzQ4RjhDRjUxMENFMTFFOEI2RDlFMTU4QzEzNzNEOTEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpjMDJjYjg2Yy1mNmMyLWI1NDQtOTdlOC04MGJmNDQ1OGFjNGMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoyODBkNWM1OS1hZTFmLTExNzctYTcyNS1jMzE2NzExMjllNmQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6i6xTEAAAAcUlEQVR42mJgYGB4CMTBDMSDYKgeBgsgfgfESURoSoKqtYAJ6ALxCyAuwqOpCKpGF11CBYgfAHEzFk3NUDkVXKbKAPE1IJ4CxIxQPAUqJoOskBGLZlEg3gbEN6B8DSD2AuLXxIQcPxDvhWJ+bAoAAgwAaeYTPHjOS5kAAAAASUVORK5CYII=) calc(100% - 12px) no-repeat;
+    cursor: pointer;
+    padding: 6px 30px 6px 12px;
+    border: 1px solid #dfe1e0;
+    border-radius: 4px
+}
+
+select.app-input_white {
+    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAHCAYAAADXhRcnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkZTM5YjVhMi03OGRkLTRhZmUtOWI0MC1mNmVkMjBjMWIyNGYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjE4OUE5ODAxNzFDMTFFODkyQkNFRUY4NTdFRTJGQ0QiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjE4OUE5N0YxNzFDMTFFODkyQkNFRUY4NTdFRTJGQ0QiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpjMDJjYjg2Yy1mNmMyLWI1NDQtOTdlOC04MGJmNDQ1OGFjNGMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoyODBkNWM1OS1hZTFmLTExNzctYTcyNS1jMzE2NzExMjllNmQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4KGkfnAAAAhElEQVR42mL4////QyDOAGIGEjBI/UMQwwiInwNxBxAzEtDECFUHUm8EE5QD4qtAvAKI2XFoBImvhKoDqWdAluQH4n1AfBiIhdA0CkHF90HVMaBrBmE2IF4IxDeBWAkqpgTlL4TKM+DSDPNXExC/AuIUKN2ELTzwBU4iEH+A0ljVAAQYAAmmTmjV8MPgAAAAAElFTkSuQmCC) calc(100% - 12px) no-repeat;
+    color: #fff
+}
+
+select.app-input.app-input_white option {
+    color: #000
+}
+
+.app-group-addon_grey .input-group-text {
+    background-color: #6c7e85;
+    border-color: transparent
+}
+
+.app-group-addon_blue .input-group-text {
+    background-color: #078fd1;
+    border-color: transparent
+}
+
+.app-group-addon__passsword-type .input-group-text {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.app-input-group-text {
+    background-color: #fdfdfd
+}
+
+.app-link_white, .app-link_white:hover {
+    color: #fff;
+    text-decoration: underline
+}
+
+.app-link_blue, .app-link_blue:hover {
+    color: #0790d1;
+    text-decoration: underline
+}
+
+.app-text-header {
+    position: relative;
+    text-align: center
+}
+
+.app-text-header:after {
+    height: 2px;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    background-color: transparent;
+    width: 100%
+}
+
+.app-text-header_active:after {
+    background-color: #f6881d
+}
+
+.app-text-header_fixed:after {
+    background-color: #f6881d;
+    width: 90px;
+    left: 50%;
+    margin-left: -45px
+}
+
+.app-text-header_line-next-to:after {
+    bottom: auto
+}
+
+.app-text-solid {
+    white-space: nowrap
+}
+
+.app-table {
+    background-color: #fff;
+    border: 1px solid #dfe1e0;
+    border-radius: 4px;
+    overflow: auto;
+    font-size: 17px
+}
+
+.app-table-body, .app-table-foot, .app-table-head {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column
+}
+
+.app-table-foot, .app-table-head {
+    border-bottom: 1px solid #dfe1e0;
+    margin-bottom: -1px
+}
+
+.app-table-foot .app-table-cell, .app-table-head .app-table-cell {
+    background-color: #f9f9f9;
+    color: #646464
+}
+
+.app-table-row {
+    display: flex;
+    flex-flow: row;
+    min-height: 50px;
+    border-bottom: 1px solid #e9ebea;
+    margin-bottom: -1px
+}
+
+.app-table-row-entering, .app-table-row-entering:hover {
+    background-color: rgba(246, 136, 29, .2);
+    -webkit-transition: background-color .4s;
+    transition: background-color .4s
+}
+
+.app-table-body .app-table-row {
+    font-weight: 700;
+    font-family: LatoWebSemibold, Roboto, sans-serif
+}
+
+.app-table-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    flex: 1 0 40px;
+    min-width: 0;
+    position: relative
+}
+
+.app-table-cell_nothing {
+    min-height: 70px
+}
+
+.app-table-cell:first-child {
+    padding-left: 20px
+}
+
+.app-table-cell:last-child {
+    padding-right: 20px
+}
+
+.app-table-link {
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    line-height: 1.5;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.app-table-link, .app-table-link:active, .app-table-link:hover, .app-table-link:visited {
+    color: #212529;
+    text-decoration: none
+}
+
+.app-table-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #fd6846
+}
+
+.app-table-link_info:after {
+    background-color: #0790d1
+}
+
+.app-text-over-ellipsis {
+    text-overflow: ellipsis;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.app-modal {
+    max-width: 770px;
+    text-align: center
+}
+
+.app-modal__header {
+    padding: 20px 20px 0;
+    border-bottom: none
+}
+
+.app-modal .close {
+    font-size: 40px;
+    padding-bottom: 0
+}
+
+.app-modal__header .close:focus {
+    outline: none
+}
+
+.app-modal__body {
+    padding-top: 0;
+    padding-bottom: 30px
+}
+
+.app-modal__body__title {
+    width: 100%;
+    font-size: 35px;
+    margin-bottom: 25px
+}
+
+.app-modal__body__content-group {
+    width: 75% !important;
+    margin: auto;
+    text-align: center
+}
+
+.app-modal__body__content-group_checkbox {
+    text-align: left
+}
+
+.app-modal__body__content-group__flex-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px
+}
+
+.app-modal__body__content-group__label {
+    font-size: 20px;
+    font-family: LatoWebRegular, sans-serif;
+    margin-bottom: 20px
+}
+
+.app-modal__body__content-group__label_flex {
+    white-space: nowrap;
+    margin: 0 20px 0 0
+}
+
+.app-modal__body__content-group__label_sub-text {
+    font-size: 17px;
+    margin-bottom: 0
+}
+
+.app-modal__body__content-group__input {
+    height: 43px;
+    margin-bottom: 20px
+}
+
+.app-modal__body__content-group__input_flex {
+    margin-bottom: 0
+}
+
+.app-modal__body__save-button {
+    height: 54px;
+    margin: 30px auto auto;
+    display: block;
+    padding: 0 30px;
+    font-size: 20px
+}
+
+.app-modal__body__save-button_small-margin {
+    margin-top: 15px;
+    margin-bottom: 20px
+}
+
+.app-modal__body__content-group__checkbox {
+    border: 1px solid #ced4da;
+    border-radius: 5px
+}
+
+.app-modal__body__content-group__checkbox:before {
+    border-radius: 5px
+}
+
+.app-modal__body__line {
+    width: 75%;
+    height: 1px;
+    background: #eaeaea;
+    margin: 30px auto
+}
+
+.rangeslider {
+    background: #e0e0e0
+}
+
+.rangeslider, .rangeslider .rangeslider__fill {
+    box-shadow: none
+}
+
+.rangeslider .rangeslider__handle {
+    outline: none !important;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2)
+}
+
+.rangeslider__fill {
+    background: -webkit-gradient(linear, left top, right top, from(#7bba5a), to(#b0d753));
+    background: linear-gradient(90deg, #7bba5a, #b0d753)
+}
+
+.rangeslider-horizontal {
+    height: 10px
+}
+
+.rangeslider__handle:after {
+    display: none;
+    content: normal
+}
+
+@media (max-width: 500px) {
+    .app-modal__body__content-group {
+        width: 100% !important
+    }
+}
+
+/*# sourceMappingURL=main.9839c149.chunk.css.map */
